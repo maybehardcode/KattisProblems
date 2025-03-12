@@ -1,3 +1,4 @@
+//https://open.kattis.com/problems/commercials
 #include <iostream>
 int main() {
     int n = 0, p = 0, index = 0, value = 0, temp = 0;
