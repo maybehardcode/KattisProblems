@@ -10,9 +10,10 @@ using namespace std;
      for each neighbor v of u:
          if v is not visited:
              DFS(v)
- *
  */
-// r and c for location found first star, pass stars and visited as reference
+// r and c is grid location / pixel (row and column)
+// const reference to stars, which is 1-1 grid from input
+// reference to visited, which is same size as stars but bool, all initialized to false
 void DFS(int r, int c, const vector<vector<char>>& stars, vector<vector<bool>>& visited) {
     // int rows, int cols) {// for grid size, rows and cols
 // because i dont want to double add to count, I am going to check the first node and add to count from outside this function
